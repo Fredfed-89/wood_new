@@ -1,0 +1,18 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/hero-descr";
+@import "./components/house";
+@import "./components/sleeping";
+@import "./components/perfect";
+@import "./components/past";
+@import "./components/together";
+@import "./components/booked";
+@import "./components/footer";

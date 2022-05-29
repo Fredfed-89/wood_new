@@ -1,0 +1,115 @@
+.perfect {
+  padding: 100px 0;
+  color: var(--color-dark-green);
+
+  @include macbook {
+    padding: 50px 0;
+  }
+
+  @include mobile-m {
+    padding: 30px 0;
+  }
+
+  &__top-inner {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: start;
+  }
+
+  &__orange-line {
+    transform: translateX(21px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    @include mobile-m {
+      gap: 26px;
+    }
+
+    @include mobile-s {
+      display: block;
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0;
+    padding-left: 52px;
+    max-width: 568px;
+    width: 100%;
+    background-size: 36px 36px;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    &--kitchen {
+      background-image: url('../img/perfect-kitchen.png');
+    }
+
+    &--paths {
+      background-image: url('../img/perfect-paths.png');
+    }
+
+    &--coffee {
+      background-image: url('../img/perfect-coffee.png');
+    }
+
+    &--natural {
+      background-image: url('../img/perfect-natural.png');
+    }
+
+    &--conditioner {
+      background-image: url('../img/perfect-conditioner.png');
+    }
+
+    &--storage {
+      background-image: url('../img/perfect-storage.png');
+    }
+
+    &--cutlery {
+      background-image: url('../img/perfect-cutlery.png');
+    }
+
+    &--take-away {
+      background-image: url('../img/perfect-take-away.png');
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @include mobile-m {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @include mobile-m {
+      font-size: 12px;
+    }
+  }
+}

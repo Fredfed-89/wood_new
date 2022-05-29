@@ -1,0 +1,281 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.5;
+  font-size: $font-body;
+  font-weight: 400;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+  overflow: visible;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--color-dark-green);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 8px;
+    background-color: var(--color-top-title);
+  }
+}
+
+.text {
+  font-size: $font-body-small;
+  line-height: 1.4;
+  color: var(--color-black);
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+.btn-small {
+  padding: 11px 18px;
+  font-size: 16px;
+}
+
+.btn-big {
+  padding: 16px 26px;
+}
+
+.orange-line {
+  display: inline-block;
+  margin-bottom: 30px;
+
+  @include mobile-m {
+    margin-bottom: 20px;
+  }
+
+  @include mobile-s {
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 8px;
+    left: 50%;
+    right: 50%;
+    background-color: var(--color-top-title);
+    transform: translate(-50%, -50%);
+
+    @include mobile-s {
+      width: 38px;
+      height: 6px;
+    }
+  }
+}
+
+section {
+  // @include mobile-l {
+  //   padding-top: 50px;
+  //   padding-bottom: 50px;
+  // }
+}
+
+.swiper {
+  width: 1185px;
+  height: 280px;
+
+  @include macbook {
+    @media (max-width: (992px)) {
+      max-width: 610px;
+      width: auto;
+    }
+  }
+}
+
+.swiper-slide {
+  @include macbook {
+    @media (max-width: (992px)) {
+      max-width: 300px;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  @include mobile-l {
+    max-width: 645px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @include mobile-m {
+    max-width: 545px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-dark-green);
+  border-radius: 100%;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.4s ease-in-out;
+
+  &--left {
+    margin-right: 10px;
+    background-image: url("../img/left-arrow.svg");
+
+    &:hover {
+    background-color: var(--color-top-title);
+    }
+  }
+
+  &--right {
+    background-image: url("../img/right-arrow.svg");
+
+    &:hover {
+      background-color: var(--color-top-title);
+      }
+  }
+}
+
+.past__btns {
+  display: flex;
+  transform: translate(89%, 108%);
+
+  @include macbook {
+    transform: translate(78%, 108%);
+  }
+
+  @include mobile-m {
+    transform: translate(60%, 63%);
+  }
+
+  @include mobile-s {
+    transform: translate(55%, 80%);
+  }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+
+  &:hover {
+    color: var(--color-top-title);
+  }
+}

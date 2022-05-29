@@ -1,0 +1,273 @@
+.footer {
+  padding: 100px 0;
+  color: var(--color-white);
+  background-color: var(--color-dark-green);
+
+  @include macbook {
+    padding: 50px 0;
+  }
+
+  @include mobile-m {
+    padding: 30px 0;
+  }
+
+  &__inner-top {
+    @include flex-sb;
+
+    margin-bottom: 48px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+
+      @include mobile-s {
+        margin-right: 0;
+      }
+    }
+
+    @include mobile-m {
+      margin-bottom: 0;
+    }
+
+    @include mobile-s {
+      display: inline-block;
+      margin-right: 0;
+    }
+  }
+
+  &__pages {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+
+    @include mobile-m {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__pages-item {
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &--pages {
+      margin-bottom: 11px;
+    }
+
+    &--social {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__pages-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: currentColor;
+    transition: color 0.7s ease-in-out;
+
+    &:hover {
+      color: var(--color-top-title);
+    }
+  }
+
+  &__social {
+    width: 100%;
+    max-width: 280px;
+
+    @include mobile-m {
+      margin-bottom: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  &__social-list {
+    display: inline-flex;
+    width: 100%;
+    max-width: 136px;
+  }
+
+  &__social-item {
+    width: 32px;
+    height: 32px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__social-icon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__social-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-white);
+    transition: fill 0.6s ease-in-out;
+
+    &:hover {
+      fill: var(--color-top-title);
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 576px;
+
+    @include mobile-m {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__form-text {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 566px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  &__input {
+    padding: 16px 75px 16px 30px;
+    width: 100%;
+    max-width: 576px;
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    outline: transparent;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    padding: 5px 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 10px;
+    border: transparent;
+    color: var(--color-white);
+    background: var(--color-dark-green);
+    transform: translate(-66px, 11px);
+    cursor: pointer;
+    transition: color 0.7s ease-in-out, background-color 0.7s ease-in-out;
+
+    &:hover {
+      padding: 4px 3px;
+      border: 1px solid var(--color-dark-green);
+      color: var(--color-dark-green);
+      background-color: var(--color-white);
+    }
+
+    &:active {
+      color: var(--color-white);
+      background-color: var(--color-top-title);
+    }
+  }
+
+  &__inner-bottom {
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    @include mobile-m {
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__copyright {
+    margin-bottom: 20px;
+
+    @include mobile-s {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @include mobile-l {
+      flex-wrap: wrap;
+    }
+
+    @include mobile-s {
+      display: block;
+    }
+  }
+
+  &__contacts-item {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 22px;
+
+      @include mobile-s {
+        padding-right: 0;
+      }
+    }
+
+    @include mobile-m {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__contacts-item a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-white);
+    transition: color 0.7s ease-in-out;
+
+    &:hover {
+      color: var(--color-top-title);
+    }
+  }
+
+  &__phone-link,
+  &__mail-link {
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 9px;
+      right: 4px;
+      width: 14px;
+      height: 1px;
+      background-color: var(--color-white);
+
+      @include mobile-m {
+        display: none;
+      }
+    }
+  }
+}

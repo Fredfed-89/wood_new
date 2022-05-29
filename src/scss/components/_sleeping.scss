@@ -1,0 +1,98 @@
+.sleeping {
+  padding-bottom: 100px;
+  text-align: center;
+  color: var(--color-dark-green);
+  background-color: var(--color-bg-light-gray);
+
+  @include macbook {
+    padding-bottom: 50px;
+  }
+
+  @include mobile-m {
+    padding-bottom: 30px;
+  }
+
+  &__img {
+    margin-bottom: 100px;
+    width: 100%;
+
+    @include macbook {
+      margin-bottom: 50px;
+    }
+
+    @include mobile-m {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+
+    @include mobile-m {
+      gap: 10px;
+    }
+  }
+
+  &__options-title {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 76px;
+
+    background-size: 64px 64px;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @include mobile-m {
+      background-size: 58px 58px;
+    }
+
+    @include mobile-s {
+      background-size: 52px 52px;
+    }
+
+    &--beds {
+      background-image: url('../img/sleeping-beds.png');
+    }
+
+    &--bedrooms {
+      background-image: url('../img/sleeping-bedrooms.png');
+    }
+
+    &--bathrooms {
+      background-image: url('../img/sleeping-bathrooms.png');
+    }
+  }
+
+  &__options-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @include mobile-m {
+      font-size: 12px;
+    }
+  }
+}

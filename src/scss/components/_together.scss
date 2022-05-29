@@ -1,0 +1,111 @@
+.together {
+  padding-bottom: 100px;
+
+  @include macbook {
+    padding-bottom: 50px;
+  }
+
+  @include mobile-l {
+    padding-bottom: 30px;
+  }
+
+  @include mobile-m {
+    padding-bottom: 20px;
+  }
+
+  &__inner {
+    @include flex-sb;
+
+    @include mobile-m {
+      flex-direction: column;
+    }
+  }
+
+  &__left-inner {
+    margin-right: 64px;
+    max-width: 552px;
+    width: 100%;
+
+    @include mobile-l {
+      margin-right: 25px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 100px;
+    width: 100%;
+
+    @include macbook {
+      margin-bottom: 50px;
+    }
+
+    @include mobile-m {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__orange-line {
+    transform: translateX(21px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__right-inner {
+    max-width: 552px;
+    width: 100%;
+    color: var(--color-black);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    @include mobile-m {
+      display: block;
+    }
+  }
+
+  &__item {
+    margin-bottom: 27px;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  &__descr {
+    margin: 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 1.4;
+    background-position: left top;
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+
+    &--wifi {
+      background-image: url(../img/together-wifi-icon.png);
+    }
+
+    &--bread {
+      background-image: url(../img/together-bread-icon.png);
+    }
+
+    &--crane {
+      background-image: url(../img/together-crane-icon.png);
+    }
+
+    &--dining {
+      background-image: url(../img/together-dining-icon.png);
+    }
+  }
+}
