@@ -1,44 +1,38 @@
 <header class="header">
-  <div class="container">
-
-
+  <div class="container header__container">
+    <a class="header__logo" href="#">
+      <img class="logo" src="img/logo.svg" width="128" height="45" alt="site logo">
+    </a>
     <nav class="header__nav">
-      <ul class="header__list list-reset">
-
-        <li class="header__list-item">
-          <a class="header__logo" href="#">
-            <img class="logo" src="img/logo.svg" width="128" alt="site logo">
+      <ul class="header__menu list-reset">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">
+            Start
           </a>
         </li>
-        <li class="header__list-item header__list-center">
-          <ul class="header__menu list-reset">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
-                Start
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
-                Contact
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
-                Our history
-              </a>
-            </li>
-          </ul>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">
+            Contact
+          </a>
         </li>
-
-        <li class="header__list-item">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">
+            Our history
+          </a>
+        </li>
+        <li class="header__menu-item">
           <a href="#" class="header__btn btn btn-small">
             Book now
           </a>
         </li>
-
       </ul>
     </nav>
-
-
+    <button class="hamburger hamburger--spring" type="button" aria-label="menu button navigation"
+      aria-controls="navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+      <span class="hamburger-label">menu</span>
+    </button>
   </div>
 </header>

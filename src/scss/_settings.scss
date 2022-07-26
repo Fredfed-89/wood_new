@@ -178,13 +178,6 @@ a {
   }
 }
 
-section {
-  // @include mobile-l {
-  //   padding-top: 50px;
-  //   padding-bottom: 50px;
-  // }
-}
-
 .swiper {
   width: 1185px;
   height: 280px;
@@ -240,7 +233,7 @@ section {
     background-image: url("../img/left-arrow.svg");
 
     &:hover {
-    background-color: var(--color-top-title);
+      background-color: var(--color-top-title);
     }
   }
 
@@ -249,7 +242,7 @@ section {
 
     &:hover {
       background-color: var(--color-top-title);
-      }
+    }
   }
 }
 

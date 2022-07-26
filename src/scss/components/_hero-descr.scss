@@ -15,6 +15,7 @@
     @include flex;
 
     margin: 0 auto;
+    font-size: 14px;
     width: 100%;
     max-width: 768px;
 
@@ -28,12 +29,10 @@
     margin-right: 40px;
     max-width: 360px;
     width: 100%;
-    font-size: 14px;
     line-height: 1.4;
 
     @include mobile-l {
       margin-right: 20px;
-      font-size: 13px;
     }
 
     @include mobile-m {
@@ -52,7 +51,6 @@
     margin: 0;
     margin-bottom: 41px;
     max-width: 343px;
-    font-size: 13px;
 
     @include mobile-m {
       margin: 0;
@@ -69,7 +67,7 @@
     line-height: 1.4;
     color: var(--color-white);
     background-color: var(--color-dark-green);
-    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
     &:hover {
       padding: 8px 15px;

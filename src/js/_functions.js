@@ -2,7 +2,9 @@
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // Определение операционной системы на мобильных
-import { mobileCheck } from "./functions/mobile-check";
+import {
+  mobileCheck
+} from "./functions/mobile-check";
 console.log(mobileCheck())
 
 // Определение ширины экрана
@@ -24,7 +26,9 @@ console.log(mobileCheck())
 // import { burger } from './functions/burger';
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
-// import { disableScroll } from './functions/disable-scroll';
+// import {
+//   disableScroll
+// } from './functions/disable-scroll';
 
 // Реализация включения скролла (не забудьте вызвать функцию)
 // import { enableScroll } from './functions/enable-scroll';
