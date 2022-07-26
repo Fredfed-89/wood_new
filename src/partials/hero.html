@@ -1,15 +1,24 @@
-<section class="hero">
+<section class="hero" style="background-image: url('img/hero-bg.jpg');">
+  <h1 class="visually-hidden">Guest House</h1>
   <div class="container">
     <div class="hero__inner">
-      <img class="hero__logo" src="img/hero-logo.png" width="256" alt="big site logo">
-      <h1 class="hero__title title">
+      <picture>
+        <source srcset="img/hero-logo.avif" type="image/avif">
+        <source srcset="img/hero-logo.webp" type="image/webp">
+        <img class="hero__logo" src="img/hero-logo.png" loading="lazy" width="256" alt="big site logo">
+      </picture>
+      <h2 class="hero__title title">
         Experience the perfect combination of&nbsp;modern housing &amp;&nbsp;natural scenery.
-      </h1>
+      </h2>
       <p class="hero__text text">
         Located in&nbsp;Lofoten, norway
       </p>
       <a href="#hero-descr" class="hero__icon">
-        <img class="hero__icon-link" src="img/link-icon.png" width="60" alt="section hero link icon">
+        <picture>
+          <source srcset="img/link-icon.avif" type="image/avif">
+          <source srcset="img/link-icon.webp" type="image/webp">
+          <img class="hero__icon-link" src="img/link-icon.png" loading="lazy" width="60" alt="section hero link icon">
+        </picture>
       </a>
     </div>
   </div>

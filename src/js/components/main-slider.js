@@ -10,7 +10,7 @@ const newSwiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 5000,
+    delay: 5040,
   },
   breakpoints: {
     320: {

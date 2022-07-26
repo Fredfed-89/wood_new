@@ -1,8 +1,11 @@
 <section class="sleeping">
-  <img class="sleeping__img" src="img/house-kitchen.jpg" width="1440" alt="dining room photography">
+  <picture>
+    <source srcset="img/house-kitchen.avif" type="image/avif">
+    <source srcset="img/house-kitchen.webp" type="image/webp">
+    <source srcset="img/house-kitchen.jpg">
+    <img class="sleeping__img" src="img/house-kitchen.jpg" loading="lazy" width="1440" alt="dining room photography">
+  </picture>
   <div class="container">
-
-
     <div class="orange-line"></div>
     <h2 class="sleeping__title">
       Sleeping arrangements.
@@ -11,7 +14,6 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla
       rhoncus feugiat eros quis consectetur.
     </p>
-
     <ul class="sleeping__options list-reset">
       <li class="sleeping__item sleeping__item--beds">
         <span class="sleeping__options-title">Beds</span>
@@ -32,7 +34,5 @@
         </p>
       </li>
     </ul>
-
-
   </div>
 </section>

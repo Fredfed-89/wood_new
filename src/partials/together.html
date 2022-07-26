@@ -1,8 +1,11 @@
 <section class="together">
-  <img class="together__img" src="img/together-bg.jpg" width="1440" alt="bedroom photo">
+  <picture>
+    <source srcset="img/together-bg.avif" type="image/avif">
+    <source srcset="img/together-bg.webp" type="image/webp">
+    <source srcset="img/together-bg.jpg">
+    <img class="together__img" src="img/together-bg.jpg" loading="lazy" width="1440" alt="bedroom photo">
+  </picture>
   <div class="container">
-
-
     <div class="together__inner">
       <div class="together__left-inner">
         <div class="orange-line together__orange-line"></div>
@@ -11,7 +14,6 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
         </p>
       </div>
-
       <div class="together__right-inner">
         <ul class="together__list list-reset">
           <li class="together__item">
@@ -37,7 +39,5 @@
         </ul>
       </div>
     </div>
-
-
   </div>
 </section>
