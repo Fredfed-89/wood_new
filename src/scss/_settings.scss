@@ -179,36 +179,12 @@ a {
 }
 
 .swiper {
-  width: 1185px;
-  height: 280px;
+  width: 1180px;
+  height: 100%;
 
   @include macbook {
-    @media (max-width: (992px)) {
-      max-width: 610px;
-      width: auto;
-    }
-  }
-}
-
-.swiper-slide {
-  @include macbook {
-    @media (max-width: (992px)) {
-      max-width: 300px;
-      width: 100%;
-      overflow: hidden;
-    }
-  }
-
-  @include mobile-l {
-    max-width: 645px;
+    max-width: 570px;
     width: 100%;
-    overflow: hidden;
-  }
-
-  @include mobile-m {
-    max-width: 545px;
-    width: 100%;
-    overflow: hidden;
   }
 }
 
@@ -250,6 +226,10 @@ a {
   display: flex;
   transform: translate(89%, 108%);
 
+  @include old-desktop {
+    transform: translate(85%, 108%);
+  }
+
   @include macbook {
     transform: translate(78%, 108%);
   }
@@ -263,7 +243,6 @@ a {
   }
 }
 
-
 .swiper-button-prev,
 .swiper-button-next {
   position: static;
@@ -271,4 +250,21 @@ a {
   &:hover {
     color: var(--color-top-title);
   }
+}
+
+.swiper-slide.swiper-slide-active {
+  @include desktop {
+    max-width: 570px;
+    width: 100%;
+  }
+
+  @include old-desktop {
+    max-width: 490px;
+    width: 100%;
+  }
+}
+
+.swiper-slide.swiper-slide-next {
+  max-width: 570px;
+  width: 100%;
 }
