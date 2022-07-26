@@ -4,17 +4,24 @@ const newSwiper = new Swiper('.swiper', {
   slidesPerView: "auto",
   centeredSlides: false,
   spaceBetween: 20,
-  loop: false,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
     },
+    576: {
+      slidesPerView: 2,
+    },
     768: {
-      slidesPerView: 1,
+      spaceBetween: 5,
+      slidesPerView: 2,
     },
     992: {
       spaceBetween: 10,

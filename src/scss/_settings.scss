@@ -186,6 +186,16 @@ a {
     max-width: 570px;
     width: 100%;
   }
+
+  // @include mobile-l {
+  //   max-width: 280px;
+  //   width: 100%;
+  // }
+
+  // @include mobile-m {
+  //   max-width: 570px;
+  //   width: 100%;
+  // }
 }
 
 .swiper-button-prev::after,
@@ -202,7 +212,7 @@ a {
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 
   &--left {
     margin-right: 10px;
@@ -262,9 +272,29 @@ a {
     max-width: 490px;
     width: 100%;
   }
+
+  @include mobile-l {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  @include mobile-m {
+    max-width: 570px;
+    width: 100%;
+  }
 }
 
 .swiper-slide.swiper-slide-next {
   max-width: 570px;
   width: 100%;
+
+  @include mobile-l {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  @include mobile-m {
+    max-width: 570px;
+    width: 100%;
+  }
 }
