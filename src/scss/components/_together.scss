@@ -72,8 +72,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 
-    @include mobile-m {
-      display: block;
+    @include mobile-s {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -81,6 +82,10 @@
     margin-bottom: 27px;
     max-width: 260px;
     width: 100%;
+
+    @include mobile-l {
+      margin-bottom: 0;
+    }
   }
 
   &__descr {
