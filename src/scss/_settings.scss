@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+body [data-aos-duration='5000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='5000'] {
+  transition-duration: 5000ms;
+}
+
 .page {
   margin: 0;
   padding: 0;
@@ -143,6 +148,7 @@ a {
 .btn-small {
   padding: 11px 18px;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .btn-big {
